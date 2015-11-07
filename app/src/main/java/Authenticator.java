@@ -3,7 +3,9 @@ import java.security.NoSuchAlgorithmException;
         import java.security.spec.InvalidKeySpecException;
         import java.security.spec.KeySpec;
         import java.util.Arrays;
-        import javax.crypto.SecretKeyFactory;
+
+import javax.crypto.Cipher;
+import javax.crypto.SecretKeyFactory;
         import javax.crypto.spec.PBEKeySpec;
 
 public class Authenticator {
@@ -28,8 +30,14 @@ public class Authenticator {
     public static boolean check(byte[] hash_Input, String hash_User) {
         return Arrays.equals(hash_Input, hash_User.getBytes());
     }
+    long  x_Y = 1000000000;
 
 }
+
+
+//WHADDUP DOEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+
+
 
 
 
